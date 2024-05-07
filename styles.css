@@ -1,0 +1,96 @@
+/* Using the element selector:
+  The body element is given a margin of 1rem on top and bottom and 5 rem on the left and right.
+*/
+
+body {
+    margin: 1rem 5rem;
+}
+
+/*
+  The heading element is given a filter drop-shadow of 
+  2px each on x-axis and y-axis, 
+  a blur of 1px 
+  shadow color to be lightgray
+  and the color of the font is chosen to be purple.
+  */
+h1 {
+    filter: drop-shadow(2px 2px 1px lightgray);
+    color: purple;
+}
+
+/*
+All the paragraphs and lists have the font-size 20.
+*/
+p,
+li {
+    font-size: 20px;
+}
+
+/*
+All the image elements have margins of 1rem on all4 sides and 
+  a border radius of 1rem.
+  */
+img {
+    margin: 1rem;
+    border-radius: 2rem;
+}
+
+/*
+  Table, table header and table data are given a 1px,solid border; so that it has a double border in the browser.
+  padding of 3px and
+  text within each row and column is alligned to the left.
+*/
+table,
+th,
+td {
+    border: 1px solid;
+    padding: 3px;
+    text-align: left;
+}
+
+/*
+Table header's background is set to a hex green color with font color white.
+*/
+th {
+    background-color: #456b5d;
+    color: white;
+}
+
+/*Every even row's background is set to lightgray.*/
+tr:nth-child(even) {
+    background-color: lightgray;
+    font: bolder;
+}
+
+/* figcaption size is set to 25px and color is selected as hex value for a shade of green */
+figcaption {
+    font-size: 25px;
+    color: #298463;
+}
+
+/* footer has a top padding of 30px and the text is alligned to the center */
+footer {
+    padding-top: 30px;
+    text-align: center;
+    font: italic;
+}
+
+/* A class selector has been used to cgange the font-family and color of the ordered listto bluevoilet on crafts page. */
+
+.ord_list {
+    font-family: monospace;
+    color: blueviolet;
+}
+
+form {
+    font-family: Verdana;
+    font-size: 15px;
+    color: gray;
+}
+
+/* An id selector is used for changing a particular line within the form to black and bold */
+
+#pref {
+    color: black;
+    font-weight: bolder;
+}

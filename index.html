@@ -1,0 +1,91 @@
+<!-- This is coding assignment for week2.
+      The requirement is to create 3 html pages with 
+      1.) links to navigate between all 3 pages.
+      2.) 2 Different size Headers.
+      3.) a list
+      4.) 3 images
+      5.) a Table
+      6.) a Form
+-->
+<!-- My first html page is named index.html -->
+<!-- It has a title Assignment 1  -->
+<!-- It can navigate to the other 2 html pages named "Arts" page and "Crafts" page from the browser-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 2</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+
+        <!--  h1 size header "Arts and Crafts" is displayed on top of the page -->
+
+        <h1>Arts and Crafts</h1>
+        <hr>
+
+        <!-- Absolute paths for all the 3 images has been provided-->
+
+        <img src="https://exhibitions.lib.umd.edu/binaries/content/gallery/exhibits/williammorris/wm-artscrafts-poppytile2.png"
+            width="225" height="225" />
+        <img src="https://cdn.e-patchesandcrests.com/catalogue/patches/arts_crafts/S1039_arts_crafts.png" width="225"
+            height="225" />
+        <img src="https://www.redtedart.com/wp-content/uploads/2022/07/Pop-Up-Rainbow-Cards.jpg" width="225"
+            height="225" />
+
+    </header>
+    <br>
+    <br>
+    <!-- A form is created with 2 Text boxes to enter Firstname and LastName 
+        2 radio buttons and 
+        a submit button 
+        to choose from arts and crafts-->
+    <!-- The text "Please type in the needed information:" is diplyed in size h3 -->
+
+    <h3> Please type in the needed information to register:</h3>
+
+    <form>
+        FirstName: <input type="text" name="FirstName" placeholder="FirstName"><br>
+        LastName: <input type="text" name="LastName" placeholder="LastName"><br><br>
+
+        <div>
+            <label id=pref for="Choice">Your Preference:</label>
+            <br>
+            <br>
+            <label for="Arts"></label>
+            <input type="radio" id="Arts" name="Choice" value="Arts">Arts<br>
+
+            <label for="Crafts"></label>
+            <input type="radio" id="Crafts" name="Choice" value="Crafts">Crafts<br>
+        </div>
+        <br>
+        <input type="submit" value="submit">
+    </form>
+
+    <!-- An un-ordered list is created with links to navigate to the other 2 pages as well as to refresh itself -->
+    <p>Please Click below the page you want to navigate to:
+    <nav>
+        <ul>
+            <li><a href="index.html">Home Page</a></li>
+            <li><a href="Page2.html">Arts</a></li>
+            <li> <a href="Page3.html">Crafts</a></li>
+        </ul>
+    </nav>
+    </p>
+    <br>
+    <hr>
+
+    <!-- A footer with the description of the page is created.-->
+
+    <footer>
+        <i> Home Page for Arts and Crafts.</i>
+    </footer>
+
+</body>
+
+</html>
